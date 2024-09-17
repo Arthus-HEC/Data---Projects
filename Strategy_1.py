@@ -16,7 +16,6 @@ data = yf.download('AAPL', start='2020-01-01', end='2024-01-01')
 # Calculs SMA50 and SMA200
 
 data['SMA50'] = data['Close'].rolling(window=50).mean()
-data['SMA200'] = data['Close'].rolling(window=200).mean()
 
 
 # Create the rule of buying and selling 
