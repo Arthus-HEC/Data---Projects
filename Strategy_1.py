@@ -29,21 +29,21 @@ data['Position'] = data['Signal'].diff()
 
 data['Portfolio Value'] = 0
 
-# Simuler l'achat et la vente d'actions
+
 for i in range(len(data)):
-    if data['Position'][i] == 1:  ## Buying 
-        shares = investment // data['Close'][i]  # as much as possible 
-        investment -= shares * data['Close'][i]  # remaining liquidity 
+    if data['Position'][i] == 1:  
+        shares = investment // data['Close'][i]  
+        investment -= shares * data['Close'][i]  
         
-    elif data['Position'][i] == -1 and shares > 0:  # Selling 
-        investment += shares * data['Close'][i]  # all the action
+    elif data['Position'][i] == -1 and shares > 0:  
+        investment += shares * data['Close'][i]  
         shares = 0  
     
-    # Calcul de la valeur du portefeuille à chaque jour
+    
     data['Portfolio Value'][i] = investment + shares * data['Close'][i]
 
 
-# Visualiser la performance du portefeuille
+
 plt.figure(figsize=(12,6))
 plt.plot(data['Portfolio Value'], label='Portfolio Value')
 plt.title('Investment Strategy -- APPL')
