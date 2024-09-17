@@ -1,5 +1,5 @@
 Welcome to My Quantitative Finance Portfolio
-I'm a student with a passion for data science and finance, currently pursuing studies in these fields. This GitHub repository is dedicated to showcasing my projects and skills related to quantitative finance, trading algorithms, financial modeling, and data analysis.
+I'm an HEC student with a passion for data science and finance, currently pursuing studies in these fields. This GitHub repository is dedicated to showcasing my projects and skills related to quantitative finance, trading algorithms, financial modeling, and data analysis.
 
 Here, you'll find a variety of projects that demonstrate my expertise in:
 
