@@ -1,0 +1,10 @@
+Nom,Age,Salaire,Ville,Score
+Alice,25.0,50000.0,Paris,85.0
+Bob,30.0,54000.0,Londres,88.0
+Charlie,35.0,,Berlin,
+David,,58000.0,Paris,90.0
+Edward,45.0,60000.0,Berlin,92.0
+Alice,25.0,50000.0,Paris,85.0
+Frank,30.0,,Londres,87.0
+George,,62000.0,,89.0
+,28.0,59000.0,Paris,88.0
