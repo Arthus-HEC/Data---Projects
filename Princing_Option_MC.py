@@ -1,10 +1,6 @@
-## Import packages 
-
 import numpy as np
 import yfinance as yf
 from datetime import datetime, timedelta
-
-## Download market data 
 
 stock_name = 'AAPL'
 end_date = datetime.today()
@@ -15,21 +11,14 @@ stock_data = yf.download(
     start = start_date, 
     end = end_date)
 
-## Compute stock volatility 
-
 d_returns = stock_data['Adj Close'].pct_change(1)
 stock_vol = d_returns.std()
-
-
-## European option parameters
 
 stock_price = stock_data['Adj Close'][-1]
 strike_price = stock_price # At the money
 
 risk_free_rate = 0.05
 maturity = 1
-
-## European option with MC
 
 def european_option_price(S0, K, v, r, T, nSim, flag):
     z = np.random.standard_normal(nSim)
