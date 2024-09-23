@@ -27,3 +27,12 @@ VaR = mean_returns - z_score*std_returns
 
 print(VaR)
 
+## Backtesting
+
+VaRbreach = 0 
+for a in returns: 
+    if a < VaR :
+        VaRbreach = VaRbreach + 1
+    else :
+        VaRbreach = VaRbreach
+    
