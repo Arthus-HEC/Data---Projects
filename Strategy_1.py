@@ -1,8 +1,6 @@
 import yfinance as yf
 import matplotlib.pyplot as plt
 
-## We define the inital paramters of the strategy. The inital amount of investment. We also have a look on how many shares we get
-
 n = 10000  
 investment = n  
 shares = 0  
